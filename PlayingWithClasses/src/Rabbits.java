@@ -25,6 +25,15 @@ public class Rabbits {
 		return (numberOfRabbits);
 	}
 	
+	public void rabbitsHumpNB(int parentRabbits) {
+		for (int i = parentRabbits; i > 0; i-- ) {
+			System.out.println("Number of rabbits still humping: "+ i);
+		}
+		System.out.println("All rabbits done humping.");
+		
+		 
+	}
+	
 		
 	
 	
@@ -35,6 +44,8 @@ public class Rabbits {
 		Rabbits group1 = new Rabbits(10);
 		group1.rabbitsHump(11);
 		group1.rabbitsHump(10);
+		
+		group1.rabbitsHumpNB(10);
 		
 		
 	}
